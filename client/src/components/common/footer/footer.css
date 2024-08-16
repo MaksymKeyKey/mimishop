@@ -1,0 +1,27 @@
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-cols{
+    width: 25%;
+}
+.footer-cols-header img{
+    width: 110px;
+}
+.footer-cols-elements{
+    margin-top: 30px;
+}
+.footer-cols-element{
+    margin-top: 15px;
+}
+
+.footer-cols-element.flex{
+    display: flex;
+}
+
+.footer-cols-element:hover{
+    color:#f068ea;
+    cursor: pointer;
+}

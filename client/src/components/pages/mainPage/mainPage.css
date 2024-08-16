@@ -1,0 +1,56 @@
+ *{
+    font-family:"Raleway", sans-serif;
+ }
+ body {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ html {
+     padding: 0;
+ }
+
+ ul {
+     list-style-type: none;
+ }
+
+ .news h1 {
+     text-align: center;
+     padding-top: 20px;
+ }
+
+ .slider img {
+     width: 100%;
+
+ }
+
+ .container {
+     width: 90%;
+     margin: 0 auto;
+ }
+
+ .small-img {
+     width: 30px;
+     height: 30px;
+ }
+
+ .bests {
+     margin-top: 100px;
+ }
+
+ .info_img-element {
+     display: flex;
+ }
+
+ .info_img-block .container {
+     display: flex;
+     justify-content: space-between;
+     padding: 40px;
+ }
+
+ .info_img_element-txt {
+     display: flex;
+     align-items: center;
+     margin-left: 20px;
+ }
