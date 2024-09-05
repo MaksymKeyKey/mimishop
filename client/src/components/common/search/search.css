@@ -1,0 +1,72 @@
+.search-input{
+    width: 400px;
+    height: 35px;
+    border-radius: 8px;
+}
+.search_results-block{
+    position: absolute;
+    height: 165px;
+    background-color: aliceblue;
+    overflow-y: auto;
+}
+.search_results-element{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    width: 400px;
+    margin-left: -35px;
+    margin-top: 10px;
+    border: 1px solid #f068ea;
+    z-index: 999;
+}
+
+.search_results-element:hover{
+    background-color: rgb(206, 232, 255);
+
+}
+.search_results-img{
+    width: 70px;
+    height: 70px;
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        width: 300px; /* Уменьшаем ширину поисковой строки на планшетах */
+        height: 30px; /* Уменьшаем высоту поисковой строки */
+    }
+
+    .search_results-block {
+        height: 150px; /* Уменьшаем высоту блока с результатами */
+    }
+
+    .search_results-element {
+        width: 300px; /* Подгоняем ширину под уменьшенную поисковую строку */
+        margin-left: -20px; /* Корректируем отступ для размещения */
+    }
+
+    .search_results-img {
+        width: 60px; /* Уменьшаем изображение в результатах поиска */
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        width: 250px; /* Уменьшаем ширину поисковой строки на мобильных */
+        height: 28px; /* Уменьшаем высоту на мобильных */
+    }
+
+    .search_results-block {
+        height: 120px; /* Еще сильнее уменьшаем высоту блока с результатами */
+    }
+
+    .search_results-element {
+        width: 250px; /* Уменьшаем ширину блока с результатами для мобильных */
+        margin-left: -15px; /* Корректируем отступ */
+    }
+
+    .search_results-img {
+        width: 50px; /* Уменьшаем изображение для мобильных */
+        height: 50px;
+    }
+}

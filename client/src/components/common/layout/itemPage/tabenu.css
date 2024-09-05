@@ -1,0 +1,157 @@
+.tabs-container {
+    width: 30%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.tabs-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tabs-header button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+
+.tabs-header button.active {
+    font-weight: bold;
+    color: #000;
+}
+
+.tabs-header button.active::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 50%;
+    background: #000;
+    margin-top: 5px;
+}
+
+.tabs-content {
+    font-size: 14px;
+    color: #333;
+}
+
+.detail {
+    float: right;
+}
+
+.reviews-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-form {
+    margin-top: 20px;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.review-form button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.review-form button:hover {
+    background-color: #4cae4c;
+}
+
+@media (max-width: 768px) {
+    .tabs-container {
+        width: 90%; /* Увеличиваем ширину контейнера на мобильных устройствах */
+        margin: 0 auto;
+    }
+
+    .tabs-header {
+        flex-direction: column; /* Располагаем табы в колонку на мобильных */
+        align-items: center;
+    }
+
+    .tabs-header button {
+        font-size: 14px; /* Уменьшаем размер шрифта для кнопок табов */
+        padding: 8px 15px;
+        width: 100%; /* Каждая кнопка занимает всю ширину */
+        text-align: center;
+    }
+
+    .tabs-content {
+        font-size: 13px; /* Уменьшаем шрифт для контента табов */
+    }
+
+    .detail {
+        float: none; /* Убираем обтекание текста на мобильных устройствах */
+        display: block;
+        margin-top: 10px;
+    }
+
+    .reviews-list {
+        padding: 0;
+    }
+
+    .review-item {
+        padding: 8px;
+        font-size: 13px; /* Уменьшаем размер текста в отзывах */
+    }
+
+    .review-form input,
+    .review-form textarea {
+        padding: 8px; /* Сужаем поля ввода и textarea */
+        font-size: 14px;
+    }
+
+    .review-form button {
+        width: 100%; /* Кнопка отправки формы занимает всю ширину */
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs-container {
+        width: 100%; /* Для узких экранов ширина табов 100% */
+    }
+
+    .tabs-header button {
+        font-size: 12px; /* Еще больше уменьшаем размер шрифта */
+        padding: 6px 10px;
+    }
+
+    .tabs-content {
+        font-size: 12px;
+    }
+
+    .review-form input,
+    .review-form textarea {
+        font-size: 12px; /* Уменьшаем размер шрифта в формах */
+    }
+
+    .review-form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,140 @@
+.filters{
+    background-color: #f0dcf9;
+    height: 50px;
+    width: 100%;
+}
+.filters-list{
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+}
+.filters-list li{
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.filters-list li:hover{
+    background-color: #efd8ee;
+}
+.filters_elements-block{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.filters_element{
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid;
+}
+.filters_element:hover{
+    background-color: rgb(211, 232, 251);
+
+}
+
+.filter-name{
+    color: #ed73e6;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+}
+.filter-name li{
+  width: auto;
+}
+
+.main-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.subs-block {
+    height: max-content;
+    position: sticky;
+    top: 80px;
+    z-index: 99;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 15%;
+  }
+  
+  .subfilter-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subfilter-link {
+    text-decoration: none;
+  }
+  
+  .subfilter-item:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+  }
+  
+  .subfilter-item:active {
+    background-color: #ccc;
+  }
+  
+  .subs-block li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .subfilter-item:active {
+    background-color: #ccc;
+  }
+  
+  /* Highlight the clicked (active) subfilter item */
+  .subfilter-item.active {
+    background-color: #F58DEF; /* Change to the color you want */
+    color: white;
+    border-color: #F58DEF;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+  @media (max-width: 768px) {
+    .filters-list {
+        flex-direction: column; /* Располагаем фильтры в колонку */
+    }
+
+    .subs-block {
+        width: 100%; /* Ширина для блока подфильтров */
+        position: static; /* Убираем фиксированное положение */
+        margin: 0;
+        padding: 0;
+        gap: 5px; /* Уменьшаем промежутки между элементами */
+    }
+
+    .subfilter-item {
+        width: 100%; /* Ширина элемента подфильтра на весь контейнер */
+        text-align: center; /* Центрируем текст */
+    }
+    .filters-list li {
+        cursor: pointer;
+        padding: 10px 0px 10px 0px; /* Увеличиваем отступы для удобства на мобильных устройствах */
+        text-align: center;
+        width: 100%;
+    }
+}

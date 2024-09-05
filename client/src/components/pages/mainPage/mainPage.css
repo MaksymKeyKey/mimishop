@@ -1,0 +1,148 @@
+ * {
+     font-family: "Comic Neue", cursive;
+ }
+
+ body {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ html {
+     padding: 0;
+ }
+
+ ul {
+     list-style-type: none;
+ }
+
+ .news{
+    margin-top: 76px;
+ }
+
+ .news h1 {
+     margin: 0;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+
+ }
+
+ .slider img {
+     width: 100%;
+
+ }
+
+ .container {
+     width: 90%;
+     margin: 0 auto;
+ }
+
+ .small-img {
+     width: 30px;
+     height: 30px;
+ }
+
+ .bests {
+     margin-top: 100px;
+    margin-bottom: 76px;
+
+ }
+
+ .info_img-element {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+ }
+
+ .info_img-element img {
+     width: 100px;
+     height: 100px;
+ }
+
+ .info_img-block .container {
+     display: flex;
+     justify-content: space-between;
+     padding: 40px;
+ }
+
+ .info_img_element-txt {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 20px;
+ }
+
+ .info_img_element-txt-head {
+     font-size: 20px;
+     font-weight: 700;
+ }
+
+ .info_img_element-txt-content {
+     text-align: center;
+ }
+
+ .aboutUs{
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
+
+ .aboutUs-content{
+    font-size: 18px;
+    color: #333333;
+ }
+
+ .header-stiky{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+ }
+
+ @media (max-width: 768px) {
+    .info_img-block .container {
+        flex-direction: column; /* Переключаемся на вертикальное отображение для блока с изображениями */
+        align-items: center; /* Центрируем элементы */
+        padding: 20px; /* Уменьшаем отступы */
+    }
+
+    .info_img-element {
+        width: 100%; /* Увеличиваем ширину элементов до 100% */
+        margin-bottom: 20px; /* Добавляем отступ снизу для разделения элементов */
+    }
+
+    .info_img-element img {
+        width: 80px; /* Уменьшаем размер изображения для мобильных */
+        height: 80px;
+    }
+
+    .aboutUs-content {
+        font-size: 16px; /* Уменьшаем размер шрифта для текста */
+    }
+    .info-header{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .news h1 {
+        font-size: 24px; /* Уменьшаем размер заголовка для мобильных */
+        padding: 15px; /* Уменьшаем отступы */
+    }
+
+    .bests {
+        margin-top: 50px; /* Уменьшаем отступы для более компактного отображения */
+        margin-bottom: 50px;
+    }
+
+    .info_img-element img {
+        width: 60px; /* Ещё больше уменьшаем изображения для малых экранов */
+        height: 60px;
+    }
+
+    .aboutUs {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

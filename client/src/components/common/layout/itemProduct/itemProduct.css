@@ -1,0 +1,58 @@
+.productBtns {
+  display: flex;
+  align-items: center;
+}
+
+.totalCost-block {
+  display: flex;
+}
+
+.notification {
+  position: fixed;
+  top: 10px;
+  left: 37%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .productBtns {
+      flex-direction: column; /* Кнопки выстраиваются в колонку на мобильных */
+      align-items: flex-start; /* Выравнивание кнопок по левому краю */
+  }
+
+  .totalCost-block {
+      flex-direction: column; /* Блок с общей стоимостью выстраивается вертикально */
+      align-items: flex-start;
+      margin-bottom: 10px;
+  }
+
+  .notification {
+      left: 20%; /* Изменяем положение уведомления для мобильных устройств */
+      font-size: 10px; /* Уменьшаем размер шрифта уведомления */
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productBtns {
+      width: 100%; /* Кнопки занимают всю ширину экрана */
+      align-items: center;
+  }
+
+  .totalCost-block {
+      width: 100%;
+      justify-content: space-between; /* Равномерное распределение элементов */
+      margin-bottom: 15px;
+  }
+
+  .notification {
+      left: 10%; /* Уведомление центрируется для очень узких экранов */
+      font-size: 9px;
+      padding: 6px;
+  }
+}

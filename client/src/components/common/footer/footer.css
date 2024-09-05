@@ -1,0 +1,71 @@
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-cols{
+    width: 25%;
+}
+.footer-cols-header img{
+    width: 110px;
+}
+.footer-cols-elements{
+    margin-top: 30px;
+}
+.footer-cols-element{
+    margin-top: 15px;
+}
+
+.footer-cols-element.flex{
+    display: flex;
+}
+
+
+.footer-cols-element:hover{
+    color:#f068ea;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Переключаемся на вертикальное отображение для футера на планшетах */
+        align-items: center; /* Центрируем элементы */
+        justify-content: center;
+        padding-top: 30px; /* Уменьшаем отступы */
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-cols-element.flex{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-cols {
+        width: 100%; /* Ширина колонок футера на 100% для мобильных устройств */
+        margin-bottom: 20px; /* Добавляем отступ снизу между колонками */
+    }
+
+    .footer-cols-header img {
+        width: 80px; /* Уменьшаем размер логотипа */
+    }
+
+    .footer-cols-elements {
+        margin-top: 20px; /* Уменьшаем отступ сверху для элементов */
+    }
+
+    .footer-cols-element {
+        margin-top: 10px; /* Уменьшаем отступ сверху между элементами */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-cols-header img {
+        width: 60px; /* Дополнительное уменьшение размера логотипа для маленьких экранов */
+    }
+
+    .footer-cols-element {
+        margin-top: 5px; /* Уменьшаем отступы для компактного отображения */
+    }
+}
